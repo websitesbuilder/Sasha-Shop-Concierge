@@ -38,24 +38,24 @@
 
   <form id="orderForm" action="https://formsubmit.co/sashashopconcierge@gmail.com" method="POST">
 
-    <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_captcha" value="false">
 
-    <input type="text" id="name" name="name" placeholder="Full Name" required>
+  <!-- AFTER SUBMIT GOES TO THANK YOU PAGE -->
+  <input type="hidden" name="_next" value="https://websitesbuilder.github.io/Sasha-Shop-Concierge/thank-you.html">
 
-    <input type="email" id="email" name="email" placeholder="Email Address" required>
+  <input type="text" id="name" name="name" placeholder="Full Name" required>
 
-    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+  <input type="email" id="email" name="email" placeholder="Email Address" required>
 
-    <textarea id="request" name="request" placeholder="What would you like us to shop for you?" required></textarea>
+  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
 
-    <input type="number" id="budget" name="budget" placeholder="Budget (min $350)" min="350" required>
+  <textarea id="request" name="request" placeholder="What would you like us to shop for you?" required></textarea>
 
-    <button type="submit">Submit Order</button>
+  <input type="number" id="budget" name="budget" placeholder="Budget (min $350)" min="350" required>
 
-     <!-- AFTER SUBMIT GOES TO THANK YOU PAGE -->
-   <input type="hidden" name="_next" value="https://websitesbuilder.github.io/Sasha-Shop-Concierge/thank-you.html">
+  <button type="submit">Submit Order</button>
 
-  </form>
+</form>
 
   <p style="text-align:center; font-size:14px; margin-top:10px;">
     We respond to all orders within 24 hours.
