@@ -40,9 +40,6 @@
 
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- AFTER SUBMIT GOES TO THANK YOU PAGE -->
-   <input type="hidden" name="_next" value="./thank-you.html">
-
     <input type="text" id="name" name="name" placeholder="Full Name" required>
 
     <input type="email" id="email" name="email" placeholder="Email Address" required>
@@ -54,6 +51,9 @@
     <input type="number" id="budget" name="budget" placeholder="Budget (min $350)" min="350" required>
 
     <button type="submit">Submit Order</button>
+
+     <!-- AFTER SUBMIT GOES TO THANK YOU PAGE -->
+   <input type="hidden" name="_next" value="./thank-you.html">
 
   </form>
 
