@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sasha Shop Concierge</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="brand-header">
+    <img src="logo.png" alt="Sasha Shop Concierge Logo" style="max-width: 40%; height: auto;">
+    <h1>Sasha Shop Concierge</h1>
+
+    <p class="tagline">
+        We Shop For You. We Ship With Care.
+    </p>
+</header>
+
+<nav>
+  <a href="#order">Order</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>We Shop For You. We Ship With Care.</h2>
+</section>
+
+<!-- ORDER SECTION -->
+<section id="order">
+  <h2>Place Your Order</h2>
+
+  <div class="important-notice">
+    Tell us exactly what you want us to shop for you. Include brand, size, color, store preference, or any details.
+  </div>
+
+  <form id="orderForm" action="https://formsubmit.co/sashashopconcierge@gmail.com" method="POST">
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- AFTER SUBMIT GOES TO THANK YOU PAGE -->
+    <input type="hidden" name="_next" value="thank-you.html">
+
+    <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+    <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+    <textarea id="request" name="request" placeholder="What would you like us to shop for you?" required></textarea>
+
+    <input type="number" id="budget" name="budget" placeholder="Budget (min $350)" min="350" required>
+
+    <button type="submit">Submit Order</button>
+
+  </form>
+
+  <p style="text-align:center; font-size:14px; margin-top:10px;">
+    We respond to all orders within 24 hours.
+  </p>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: sashashopconcierge@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Sasha Shop Concierge</p>
+</footer>
+
+</body>
+</html>
