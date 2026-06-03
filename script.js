@@ -113,3 +113,15 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
   this.reset();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const date = Date.now();
+    const random = Math.floor(Math.random() * 1000);
+
+    const orderId = "ORD-" + date + "-" + random;
+
+    const orderField = document.getElementById("order_id");
+    if (orderField) {
+        orderField.value = orderId;
+    }
+});
